@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <head>
     <title>Mock Google Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+        }
         img {
             display: block;
             margin: 0 auto;
         }
+        #container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        #top-buttons {
+            display: flex;
+            flex-direction: row;
+        }
+        #top-icons {
+            display: flex;
+            justify-content: flex-end;
+        }
         ul {
             list-style-type: none;
         }
+       li {
+           width: 100px;
+        }
+       
     </style>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav id="container">
+            <ul id="top-buttons">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Store</a></li>
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
             </ul>
-            <span class="material-icons">apps</span>
-            <span class="material-icons">account_circle</span>
+            <div id="top-icons">
+                <span class="material-icons">apps</span>
+                <span class="material-icons">account_circle</span>
+            </div>
         </nav>
     </header>
     <div id="foogle-img">
@@ -38,7 +62,7 @@
     <span class="material-icons">mic</span>
     <div id="buttons">
         <button id="submit" type="submit">Google Search</button>
-        <button id="lucky" type="submit">I'm Feeling Lucly</button>
+        <button id="lucky" type="submit">I'm Feeling Lucky</button>
     </div>
 </body>
 <footer>
